@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css3? family= Diplomata & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Diplomata & display=swap');
 @font-face {
     font-family: 'Diplomata', cursif ;
     src: url(font/Diplomata-Regular.ttf);
@@ -158,7 +158,7 @@ nav {
     color: black;
 }
 .logo {
-    background-image: url(img/logo1.png);
+    background-image: url(./img/logo1.png);
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: 0rem;
@@ -223,15 +223,15 @@ nav {
 /*--------------------------------------------------------------
 # Acceuil Section
 --------------------------------------------------------------*/
-#Acceuil {
+#acceuil {
     width: 100%;
     height: 100vh;
-    background-image: url(img/Acceuil.jpg);
+    background-image: url(./img/hero-bg.jpg);
     background-size: cover;
     position: relative;
     background-attachment: fixed;
 }
-#Acceuil::before {
+#acceuil::before {
     content: "";
     background: rgba(0, 0, 0, 0.4);
     position: absolute;
@@ -240,13 +240,13 @@ nav {
     left: 0;
     right: 0;
   }
-  #Acceuil .container {
+  #acceuil .container {
     padding-top: 72px;
     position: relative;
     text-align: center;
   }
   
-#Acceuil h1 {
+#acceuil h1 {
     padding: 3rem;
     margin: 0 0 10px 0rem;
     font-size: 60px;
@@ -256,7 +256,7 @@ nav {
     margin: 0rem 10rem 0rem 10rem;
     animation: heroh1 10s infinite reverse;  
   }
-  #Acceuil h2 {
+  #acceuil h2 {
     padding: 1rem;
     color: #eee;
     margin-bottom: 40px;
@@ -265,7 +265,7 @@ nav {
     animation: heroh2 5s infinite;
   }
 
-#Acceuil .play-btn {
+#acceuil .play-btn {
     width: 94px;
     height: 94px;
     margin: 0 auto;
@@ -275,7 +275,7 @@ nav {
     overflow: hidden;
     position: relative;
   }
-  #Acceuil .play-btn::after {
+  #acceuil .play-btn::after {
     content: '';
     position: absolute;
     left: 50%;
@@ -290,7 +290,7 @@ nav {
     transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
   
-  #Acceuil .play-btn::before {
+  #acceuil .play-btn::before {
     content: '';
     position: absolute;
     width: 120px;
@@ -313,12 +313,12 @@ nav {
     background: rgba(198, 16, 0, 0);
   }
   
-  #Acceuil .play-btn:hover::after {
+  #acceuil .play-btn:hover::after {
     border-left: 15px solid #009961;
     transform: scale(20);
   }
   
-  #Acceuil .play-btn:hover::before {
+  #acceuil .play-btn:hover::before {
     content: '';
     position: absolute;
     left: 50%;
@@ -337,26 +337,26 @@ nav {
   }
   
   @media all and (max-width: 700px) {
-    #Acceuil {
+    #acceuil {
       width: 100%;
       height: 50vh;
-      background-image: url(img/Acceuil2.jpeg);
+      background-image: url(./img/hero-bg2.jpeg);
       background-size: cover;
       position: relative;
   }
-    #Acceuil h1 {
+    #acceuil h1 {
       margin: 0 auto;
       font-size: 20px;
       line-height: 16px;
       text-align: center;
     }
-    #Acceuil h2 {
+    #acceuil h2 {
       margin: 0 auto;
       font-size: 10px;
       line-height: 7px;
       margin-bottom: 20px;
     }
-    #Acceuil .play-btn {
+    #acceuil .play-btn {
       width: 50px;
       height: 50px;
       margin: 0 auto;
@@ -415,11 +415,11 @@ strong {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-#main .About {
+#main .about {
   margin: 0rem 0rem 0rem 0rem;
   background-color: #E5E5E5;;
 }
-#main .About .container {
+#main .about .container {
   margin: 0rem 10rem 0rem 10rem;
 }
 .text {
@@ -429,16 +429,16 @@ strong {
 .text p {
   font-size: 30px;
 }
-.About .content {
+.about .content {
   display: flex;
 }
-#About a {
+#about a {
   font-size: 20px;
 }
 .btn {
   padding: 3rem;
 }
-.About .content .btn-learn-more {
+.about .content .btn-learn-more {
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
@@ -454,7 +454,7 @@ strong {
   border: 3px solid #000099;
 }
 
-.About .content .btn-learn-more:hover {
+.about .content .btn-learn-more:hover {
   background: #009961;
   color: #fff;
   text-decoration: none;
@@ -480,12 +480,12 @@ strong {
   .btn {
     padding: 1rem;
   }
-  .About .content .btn-learn-more {
+  .about .content .btn-learn-more {
     padding: 4px 6px;
     border-radius: 30px;
   }
   
-  .About .content .btn-learn-more:hover {
+  .about .content .btn-learn-more:hover {
     background: #009961;
     color: #fff;
     text-decoration: none;
@@ -494,21 +494,21 @@ strong {
 /*--------------------------------------------------------------
 # Service Section
 --------------------------------------------------------------*/
-#main .Service{
+#main .service{
   margin: 0rem 10rem 0rem 10rem;
 }
 
-#Service .offres {
+#service .offres {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-#Service .offres img {
+#service .offres img {
   width: 20rem;
   height: 15rem;
   animation: service 5s infinite;
 }
-.Service .icon-box {
+.service .icon-box {
   margin-top: 2rem;
   padding: 15px 5px;
   transition: all ease-in-out 0.3s;
@@ -518,28 +518,28 @@ strong {
   border-bottom: 5px solid #fff;
 }
 
-.Service .icon-box {
+.service .icon-box {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
 }
 
-.Service .icon-box:hover {
+.service .icon-box:hover {
   transform: translateY(-10px);
   border-color: #000099;
 }
 
 
 @media all and (max-width: 700px) {
-  #main .Service{
+  #main .service{
     margin: 0 auto;
     padding: 5px;
   }
-  #Service .offres img {
+  #service .offres img {
     width: 15rem;
     height: 10rem;
   }
-  .Service .icon-box {
+  .service .icon-box {
     margin-top: 2rem;
     padding: 15px 5px;
   }
@@ -651,19 +651,16 @@ strong {
 #modules .container{
   margin: 0rem 10rem 0rem 10rem;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  justify-content: space-around;
 }
 #modules h4 {
-  font-size: 30px;
-}
-#modules p {
   font-size: 20px;
 }
+#modules p {
+  font-size: 15px;
+}
 #modules .container .img {
-  margin-top: 8rem;
-  height: auto;
-  width: auto;
+  margin-top: 2rem;
 }
 
 @media all and (max-width: 700px) {
@@ -672,6 +669,7 @@ strong {
   }
   #modules .container{
     margin: 0 auto;
+    flex-wrap: wrap;
   }
   #modules h4 {
     font-size: 20px;
@@ -727,7 +725,7 @@ strong {
 #témoignage {
     width: 100%;
     height: 50vh;
-    background-image: url(img/temoignage1.png);
+    background-image: url(./img/counts-bg.png);
     background-size: cover;
     position: relative;
     text-align: center;
@@ -735,7 +733,7 @@ strong {
 }
 #témoignage::before {
     content: "";
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.2);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -746,7 +744,7 @@ strong {
   margin-top: 0rem;
   font-weight: bold;
   font-size: 55px;
-  color: #ffffff;
+  color: black;
 }
 #témoignage .title p {
   color: black;
@@ -952,28 +950,28 @@ strong {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-#main .Contact {
+#main .contact {
   margin: 0rem 10rem 0rem 10rem;
 }
-#Contact .container {
+#contact .container {
   padding: 3rem;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.Contact .location {
+.contact .location {
   width: auto;
   background: #fff;
 }
 
-.Contact .location i {
+.contact .location i {
   font-size: 52px;
   color: #000099;
   float: left;
   line-height: 1;
 }
 
-.Contact .location h4 {
+.contact .location h4 {
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
@@ -981,109 +979,60 @@ strong {
   color: #282828;
 }
 
-.Contact .location p {
+.contact .location p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 20px;
   color: black;
 }
-#Contact .maps {
+#contact .maps {
   width: 700px;
   height: 350px;
 }
 
-.Contact .php-email-form {
+.contact .email-form {
   width: 100%;
   background: #fff;
 }
 
-.Contact .php-email-form .form-group {
+.contact .email-form .form-group {
   margin-top: 30px;
 }
-.Contact .php-email-form .form-group-div {
+.contact .email-form .form-group-div {
   margin-top: 30px;
   width: 700px;
 }
-.Contact .php-email-form .form-row {
+.contact .email-form .form-row {
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.Contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
 
-.Contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.Contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #000099;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.Contact .php-email-form .sent-message br + br {
-  margin-top: 25px;
-}
-
-.Contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.Contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #000099;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.Contact .php-email-form input, .Contact .php-email-form textarea {
+.contact .email-form input, .contact .email-form textarea {
   box-shadow: none;
   font-size: 20px;
   border-radius: 4px;
 }
 
-.Contact .php-email-form input:focus, .Contact .php-email-form textarea:focus {
+.contact .email-form input:focus, .contact .email-form textarea:focus {
   border-color: #009961;
 }
 
-.Contact .php-email-form input {
+.contact .email-form input {
   height: 3rem;
   width: 100%;
 }
 
 
-.Contact .php-email-form textarea {
+.contact .email-form textarea {
   padding: 10px 12px;
   width: 99%;
   height: 15rem;
 
 }
 
-.Contact .php-email-form button[type="submit"] {
+.contact .email-form button[type="submit"] {
   background: #000099;
   border: 0;
   padding: 10px 30px;
@@ -1100,78 +1049,60 @@ strong {
 }
 @media all and (max-width: 1600px) {
   
-  #Contact .maps {
+  #contact .maps {
     margin-top: 3rem;
   }
 }
 @media all and (max-width: 1100px) {
-  #main .Contact {
+  #main .contact {
     margin: 0 auto;
     padding: 5px;
   }
-  #Contact .maps {
+  #contact .maps {
     margin-top: 3rem;
     width: 700px;
     height: 350px;
   }
 }
 @media all and (max-width: 900px) {
-  #main .Contact {
+  #main .contact {
     margin: 0 auto;
     padding: 5px;
   }
-  #Contact .maps {
+  #contact .maps {
     margin-top: 3rem;
   }
-  #Contact .section-title {
+  #contact .section-title {
     width: 100%;
   }
-  #Contact .section-title p {
+  #contact .section-title p {
     font-size: 20px;
     margin: 0 auto;
   }
-  #Contact .section-title h2 {
+  #contact .section-title h2 {
     margin: 0 auto;
   }
 }
 
 
 @media all and (max-width: 800px) {
-  #Contact .maps {
+  #contact .maps {
     margin-top: 3rem;
     width: 200rem;
   }
-  #main .Contact .php-email-form {
+  #main .contact .email-form {
     margin: 0 auto;
   }
-  .Contact .php-email-form {
+  .contact .email-form {
     margin-left: 18rem;
     width: 100%;
   }
-  #Contact .section-title p {
+  #contact .section-title p {
     font-size: 15px;
     margin: 0 auto;
   }
-  #Contact .section-title h2 {
+  #contact .section-title h2 {
     margin: 0 auto;
-  }
-}
-
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 
