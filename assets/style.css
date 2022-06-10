@@ -164,14 +164,14 @@ nav {
     background-position: 0rem;
     background-position-x: center;
     font-weight: bold;
-    animation: logo 5s infinite reverse;
+    animation: logo 5s reverse;
 }
 .logo h1:hover {
     color: black;
 }
 .logo h1 {
     font-size: 35px;
-    animation: logo 5s infinite;
+    animation: logo 5s;
 }
 .fixed-top {
   position: fixed;
@@ -196,10 +196,10 @@ nav {
     padding: 1rem 1rem 2rem;
     margin: 0rem 1rem 1rem;
     width: 5rem;
-    height: 0rem;
+    height: 1px;
   }
   .Commencer a {
-    font-size: 18px;
+    font-size: 15px;
   }
   .fixed-top {
     position: relative;
@@ -427,13 +427,13 @@ strong {
   margin: 0rem 1rem 0rem 5rem;
 }
 .text p {
-  font-size: 30px;
+  font-size: 25px;
 }
 .about .content {
   display: flex;
 }
 #about a {
-  font-size: 20px;
+  font-size: 15px;
 }
 .btn {
   padding: 3rem;
@@ -451,7 +451,7 @@ strong {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   margin-top: 40px;
-  border: 3px solid #000099;
+  border: 2px solid #000099;
 }
 
 .about .content .btn-learn-more:hover {
@@ -462,6 +462,9 @@ strong {
 
 
 @media all and (max-width: 700px) {
+  #main .about .container {
+    margin: 0 auto;
+  }
   #main .About {
     padding: 5px;
   }
@@ -475,7 +478,7 @@ strong {
     font-size: 15px;
   }
   #About a {
-    font-size: 15px;
+    font-size: 10px;
   }
   .btn {
     padding: 1rem;
