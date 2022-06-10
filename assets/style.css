@@ -130,6 +130,8 @@ nav {
     padding: 2rem 2rem 2rem;
 }
 .links a{
+  width: 48px;
+  height: 48px;
     color: black;
     margin: 1rem 1rem 1rem;
 }
@@ -972,7 +974,7 @@ strong {
   line-height: 1;
 }
 
-.contact .location h4 {
+.contact .location h3 {
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
