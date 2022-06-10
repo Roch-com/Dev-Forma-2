@@ -56,7 +56,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  animation: title 5s infinite;
+  animation: title 5s;
 }
 
 .section-title h2::after {
@@ -254,7 +254,7 @@ nav {
     line-height: 56px;
     color: #fff;
     margin: 0rem 10rem 0rem 10rem;
-    animation: heroh1 10s infinite reverse;  
+    animation: heroh1 10s reverse;  
   }
   #acceuil h2 {
     padding: 1rem;
@@ -262,7 +262,7 @@ nav {
     margin-bottom: 40px;
     font-size: 35px;
     margin: 0rem 10rem 0rem 10rem;
-    animation: heroh2 5s infinite;
+    animation: heroh2 5s;
   }
 
 #acceuil .play-btn {
@@ -346,14 +346,14 @@ nav {
   }
     #acceuil h1 {
       margin: 0 auto;
-      font-size: 20px;
+      font-size: 25px;
       line-height: 16px;
       text-align: center;
     }
     #acceuil h2 {
       margin: 0 auto;
-      font-size: 10px;
-      line-height: 7px;
+      font-size: 15px;
+      line-height: 10px;
       margin-bottom: 20px;
     }
     #acceuil .play-btn {
@@ -509,14 +509,14 @@ strong {
 #service .offres img {
   width: 20rem;
   height: 15rem;
-  animation: service 5s infinite;
+  animation: service 5s;
 }
 .service .icon-box {
   margin-top: 2rem;
   padding: 15px 5px;
   transition: all ease-in-out 0.3s;
-  background: #e7e2e2;
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+  background: #fff;
+  box-shadow: 0px 5px 90px 0px rgba(23, 23, 24, 0.1);
   border-radius: 18px;
   border-bottom: 5px solid #fff;
 }
@@ -577,7 +577,7 @@ strong {
 }
 #action .row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .action h3 {
@@ -635,10 +635,10 @@ strong {
   }
   .action .cta-btn {
     font-size: 10px;
-    letter-spacing: 0px;
     padding: 5px 10px;
     margin: 7px;
     margin-top: 50px;
+    margin-bottom: 50px;
     border-radius: 30px;
   }
   
@@ -655,6 +655,7 @@ strong {
   margin: 0rem 10rem 0rem 10rem;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 #modules h4 {
   font-size: 20px;
@@ -678,10 +679,10 @@ strong {
     font-size: 20px;
   }
   #modules p {
-    font-size: 10px;
+    font-size: 15px;
   }
   #modules .container .img {
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 }
 
@@ -693,7 +694,7 @@ strong {
 }
 #partner .img {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 #partner .img4 {
@@ -727,7 +728,7 @@ strong {
 }
 #témoignage {
     width: 100%;
-    height: 50vh;
+    max-height: auto;
     background-image: url(./img/counts-bg.png);
     background-size: cover;
     position: relative;
@@ -778,7 +779,6 @@ strong {
 @media all and (max-width: 1500px) {
   #témoignage {
     width: 100%;
-    height: 80vh;
     background-size: 120rem;
     background-repeat: no-repeat;
    }
@@ -786,7 +786,6 @@ strong {
 @media all and (max-width: 1100px) {
   #témoignage {
     width: 100%;
-    height: 60vh;
     background-size: 120rem;
     background-repeat: no-repeat;
   }
@@ -803,7 +802,6 @@ strong {
 @media all and (max-width: 700px) {
   #témoignage {
     width: 100%;
-    height: 65vh;
     background-size: 100rem;
   }
   #témoignage .title h1 {
@@ -988,9 +986,9 @@ strong {
   font-size: 20px;
   color: black;
 }
-#contact .maps {
-  width: 700px;
-  height: 350px;
+#contact iframe {
+  width: 500px;
+  height: 250px;
 }
 
 .contact .email-form {
@@ -1003,7 +1001,7 @@ strong {
 }
 .contact .email-form .form-group-div {
   margin-top: 30px;
-  width: 700px;
+  width: 40%;
 }
 .contact .email-form .form-row {
   width: 100%;
@@ -1016,23 +1014,14 @@ strong {
   box-shadow: none;
   font-size: 20px;
   border-radius: 4px;
-}
-
-.contact .email-form input:focus, .contact .email-form textarea:focus {
-  border-color: #009961;
-}
-
-.contact .email-form input {
-  height: 3rem;
+  height: 2rem;
   width: 100%;
 }
-
 
 .contact .email-form textarea {
   padding: 10px 12px;
   width: 99%;
-  height: 15rem;
-
+  height: 10rem;
 }
 
 .contact .email-form button[type="submit"] {
@@ -1044,7 +1033,7 @@ strong {
   border-radius: 50px;
 }
 
-.Contact .php-email-form button[type="submit"]:hover {
+.Contact .email-form button[type="submit"]:hover {
   background: #009961;
 }
 .text-center {
@@ -1054,6 +1043,9 @@ strong {
   
   #contact .maps {
     margin-top: 3rem;
+  }
+  .contact .email-form textarea {
+    width: 98%;
   }
 }
 @media all and (max-width: 1100px) {
@@ -1129,7 +1121,7 @@ strong {
   margin: 0 0 40px 0;
 }
 #footer h3 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
   color: #fff;
   position: relative;
